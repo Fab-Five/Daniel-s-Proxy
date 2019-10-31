@@ -183,7 +183,7 @@ const seeder = function(){
         Mongoose.connection.close();
       });
     })
-    .catch(e => console.log(e));  
+    .catch(e => console.log(e));
 }
 
 seeder();
