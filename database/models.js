@@ -1,5 +1,9 @@
 var mongoose = require("mongoose");
-var db = require("./index");
+
+mongoose.connect('mongodb://localhost:27017/menus', {useNewUrlParser: true})
+  .then(()=>console.log("connected to db menus"))
+  .catch((err)=>console.log("db menus did not connect"))
+// var db = require("./index");
 
 var menuSchema = new mongoose.Schema({
   item_name: String,
@@ -18,7 +22,7 @@ var menuSchema = new mongoose.Schema({
   },
   restaurant_id: Number,
   photo_URL: String
-});
+}, {collection: 'menu'});
 
 var menu = mongoose.model("menu", menuSchema);
 
