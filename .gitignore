@@ -4,3 +4,6 @@ database/api_header.js
 .env
 database/atlas_password.js
 webpack-stats.json
+newrelic.js
+hello.yml
+menu.csv
