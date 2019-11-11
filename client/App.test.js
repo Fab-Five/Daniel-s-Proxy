@@ -9,9 +9,9 @@ describe('testing App component', ()=> {
 	it('should return a single-node wrapper.', ()=> {
 		expect(shallow(<App />).length).toEqual(1)
     })
-    
-    
-    
+
+
+
 
 	//snapshot testing by Jest
 	// it('should grab a snapshot of the component.', ()=> {
