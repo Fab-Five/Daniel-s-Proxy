@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Menu from './Components/menu/menu.jsx'; 
+import Menu from './Components/menu/menu.jsx';
 // import Cart from './Components/cart/cart.jsx'
 import axios from 'axios'
 import path from 'path'
@@ -14,9 +14,10 @@ export default class App extends Component {
   }
 
   componentDidMount(){
-      let id = window.location.href.split("id=")[1] 
-      axios.get(`https://menu-cart.herokuapp.com/api/data/${id}`)
-      .then(result => this.setState({menuData: result.data}))
+      let id = 100
+      // let id = window.location.href.split("id=")[1]
+      axios.get(`/${id}`)
+      .then((result) => {console.log(result); this.setState({menuData: result.data})})
       .catch(err=> console.log('error getting menuData!!', err))
   }
 

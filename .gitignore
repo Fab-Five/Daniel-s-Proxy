@@ -7,3 +7,11 @@ webpack-stats.json
 newrelic.js
 hello.yml
 menu.csv
+fakeData.csv
+package-lock.json
+menu-cart-db.pem
+sample_data_from_get.js
+/public/bundle.js
+/public/bundle.js.br
+public/bundle.js.gz
+gitignore proxy-Calvin
